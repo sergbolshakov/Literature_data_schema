@@ -120,7 +120,7 @@
 
 - **`verbatimElevation`** — оригинально описание высоты над уровнем моря.
 
-- **`verbatimLatitude`** и **`verbatimLongitude`** — географическая широта и долгота в том виде, как она дана в публикации (без буквенных сокращений типа `N с. ш.` и `E / в. д.`).
+- **`verbatimLatitude`** и **`verbatimLongitude`** — географическая широта и долгота в том виде, как она дана в публикации (без буквенных сокращений типа `N / с. ш.` и `E / в. д.`).
 
 Всё, что касается геопривязки, будет выполнено аудитором, с привлечением инструментов автоматизации и проверки.
 
@@ -129,64 +129,64 @@
 Перечень полей (разбиты по классам терминов DarwinCore).
 
 Record-level:
-- language
-- basisOfRecord
+- `language`
+- `basisOfRecord`
 
 Обязательно следует указывать языки, используемые в полях записи (определяющим, как правило, будет поле `verbatimLocality` и некоторые другие verbatim-поля).
 
 Taxon:
-- acceptedNameUsage
-- scientificName
-- taxonRank
-- kingdom
+- `acceptedNameUsage`
+- `scientificName`
+- `taxonRank`
+- `kingdom`
 
 Минимально необходимым является указания ранга таксонов и царства, но желательно предоставлять полную классификацию — либо в одном поле `higherClassification`, либо в наборе полей `kingdom`, `phylum`, `class`, `order`, `family`, `genus`.
 
 Occurrence:
-- occurrenceID
-- associatedReferences
-- sourceID
-- recordedBy
-- catalogNumber
-- otherCatalogNumbers
-- recordNumber
-- associatedSequences
-- associatedTaxa
-- occurrenceRemarks
+- `occurrenceID`
+- `associatedReferences`
+- `sourceID`
+- `recordedBy`
+- `catalogNumber`
+- `otherCatalogNumbers`
+- `recordNumber`
+- `associatedSequences`
+- `associatedTaxa`
+- `occurrenceRemarks`
 
 Обязательным является наличие уникального внутри набора `occurrenceID`.
 
 Identification:
-- verbatimIdentification
-- identificationQualifier
-- typeStatus
-- identificationRemarks
-- identifiedBy
+- `verbatimIdentification`
+- `identificationQualifier`
+- `typeStatus`
+- `identificationRemarks`
+- `identifiedBy`
 
 Event:
-- verbatimEventDate
-- eventDate
-- eventRemarks
-- habitat
+- `verbatimEventDate`
+- `eventDate`
+- `eventRemarks`
+- `habitat`
 
 Location:
-- verbatimLocality
-- locality
-- locationRemarks
-- county
-- stateProvince
-- country
-- countryCode
-- verbatimElevation
-- verbatimLatitude
-- verbatimLongitude
-- decimalLatitude
-- decimalLongitude
-- coordinateUncertaintyInMeters
-- geodeticDatum
-- georeferencedBy
-- georeferenceProtocol
-- georeferenceSources
+- `verbatimLocality`
+- `locality`
+- `locationRemarks`
+- `county`
+- `stateProvince`
+- `country`
+- `countryCode`
+- `verbatimElevation`
+- `verbatimLatitude`
+- `verbatimLongitude`
+- `decimalLatitude`
+- `decimalLongitude`
+- `coordinateUncertaintyInMeters`
+- `geodeticDatum`
+- `georeferencedBy`
+- `georeferenceProtocol`
+- `georeferenceSources`
 
 ## Шаблоны
 
